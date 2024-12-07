@@ -1,0 +1,116 @@
+name: odo
+description: "An AI Assistant (ChatBot, Image generator & Language translator) Based on ChatGpt"
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+# App Version
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+# Dependencies
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  # App write with database (to dynamically update the api key)
+ # appwrite: ^13.0.0
+
+  # ios Styled icons
+  cupertino_icons: ^1.0.6
+
+
+
+  # for using lottie animation
+  lottie: ^3.1.3
+
+  # for using hive database
+
+
+ # hive: ^4.0.0-dev.2
+  #isar: ^3.0.5
+
+# Using this version due to less apk size
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+
+
+
+  # for accessing the path provider
+
+  path_provider: ^2.1.3
+
+  # for state management
+
+  get: ^4.6.6
+
+  # for using custom animations
+
+  flutter_animate: ^4.5.0
+  animated_text_kit: ^4.2.2
+
+  # for API call
+  http: ^1.2.2
+
+  #for AI image Generation
+  dart_openai: ^5.0.0
+  cached_network_image: ^3.4.1
+
+  # for Google Language Translate
+  translator_plus: ^1.0.1
+
+  # Google Gemini Ai Integration
+  google_generative_ai: ^0.4.3
+
+
+  #dio package
+  dio: ^5.7.0
+
+  # for saving image to gallery
+  saver_gallery: ^3.0.10
+  #image_gallery_saver: ^1.7.1
+  #gallery_saver_updated: ^3.0.0
+
+
+  # for sharing images
+  share_plus: ^10.1.2
+  dotenv: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Encourages good practices
+  flutter_lints: ^3.0.0
+
+  # For Changing App Icon
+  #icons_launcher: ^3.0.0
+
+
+flutter:
+
+  # Enable material Design
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/lottie/
+  #   - images/a_dot_ham.jpeg
+
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
