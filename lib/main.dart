@@ -1,15 +1,15 @@
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:odo/apis/app_write.dart';
+//import 'package:odo/apis/app_write.dart';
 import 'package:odo/helper/global.dart';
 import 'package:odo/helper/pref.dart';
 import 'package:odo/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:dotenv/dotenv.dart' as dotenv;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  dotenv.load();
+  await dotenv.load(fileName: ".env");
 
   // init hive
   await Pref.initialize();

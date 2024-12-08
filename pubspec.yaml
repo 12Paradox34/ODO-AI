@@ -77,7 +77,7 @@ dependencies:
 
   # for sharing images
   share_plus: ^10.1.2
-  dotenv: ^4.2.0
+  flutter_dotenv: ^5.0.2
 
 dev_dependencies:
   flutter_test:
